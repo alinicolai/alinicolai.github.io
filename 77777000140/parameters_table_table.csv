@@ -1,0 +1,11 @@
+Parameter name,Value
+"local_recall, ML",38.752792177588816
+"local_damping, ML",8.878788639177799
+"global_recall, ML",3.7097648734682855
+"global_damping, ML",3.352211144606754
+"sigma, ML",1.975466905659884
+"local_recall, AP",58.0012240687605
+"local_damping, AP",21.294878503896992
+"global_recall, AP",12.880346718583672
+"global_damping, AP",14.42679492377828
+"sigma, AP",1.3252777938404092

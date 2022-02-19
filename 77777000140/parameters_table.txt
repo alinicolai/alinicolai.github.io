@@ -1,0 +1,20 @@
+<b>local recall, ML</b>: 38.75
+
+<b>local damping, ML</b>: 8.88
+
+<b>global recall, ML</b>: 3.71
+
+<b>global damping, ML</b>: 3.35
+
+<b>sigma, ML</b>: 1.98
+
+<b>local recall, AP</b>: 58.00
+
+<b>local damping, AP</b>: 21.29
+
+<b>global recall, AP</b>: 12.88
+
+<b>global damping, AP</b>: 14.43
+
+<b>sigma, AP</b>: 1.33
+
