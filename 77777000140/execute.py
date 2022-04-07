@@ -138,18 +138,11 @@ if model_name=="total_recall":
     model_instance.fit(cop=cop, com=estimated_com, frequency=frequency)
     generated_cop, generated_com = model_instance.generate(true_cop=cop, true_com=estimated_com, frequency=frequency)
 
-    generated_cop2, generated_com2 = model_instance.generate(true_cop=cop, true_com=estimated_com, frequency=frequency)
-    generated_cop3, generated_com3 = model_instance.generate(true_cop=cop, true_com=estimated_com, frequency=frequency)
-
 elif model_name=="global_recall":
     model_instance = ModelCoP(list_forces_cop = ["pull", "damping"])                        
     model_instance.fit(cop=cop, frequency=frequency)
 
     generated_cop = model_instance.generate(true_cop=cop, frequency=frequency)
-
-    generated_cop2 = model_instance.generate(true_cop=cop, frequency=frequency)
-
-    generated_cop3 = model_instance.generate(true_cop=cop, frequency=frequency)
 
 params_model = []
 
@@ -209,21 +202,11 @@ for i, axis in enumerate(["ML","AP"]):
     if model_name=="total_recall":
 
         ax[1,i].plot(generated_time, generated_cop[:,i])
-#        ax[2,i].plot(generated_time, generated_cop2[:,i])
-#        ax[3,i].plot(generated_time, generated_cop3[:,i])
 
-        
-#        ax[1,i].plot(generated_time, generated_com[:,i])
-    
     elif model_name=="global_recall":
 
         ax[1,i].plot(generated_time, generated_cop[:,i])
-        
-    
 
-#        ax[2,i].plot(generated_time, generated_cop2[:,i])
-#        ax[3,i].plot(generated_time, generated_cop3[:,i])
-        
 fig.subplots_adjust(hspace=0.4)  
 fig.savefig("plot_model.png", dpi=100)
 plt.close(fig)
