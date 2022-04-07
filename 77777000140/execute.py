@@ -173,7 +173,7 @@ with open("parameters_table.txt", "wt") as f:
 
 
 
-fig, ax = plt.subplots(2,2, figsize=(15,6), sharex=True, sharey=True)
+fig, ax = plt.subplots(2,2, figsize=(13,5), sharex=True, sharey=True)
 
     
 time = np.arange(len(cop))/frequency
