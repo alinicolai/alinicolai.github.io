@@ -208,5 +208,5 @@ for i, axis in enumerate(["ML","AP"]):
         ax[1,i].plot(generated_time, generated_cop[:,i])
 
 fig.subplots_adjust(hspace=0.4)  
-fig.savefig("plot_model.pdf")
+fig.savefig("plot_model.png")
 plt.close(fig)
